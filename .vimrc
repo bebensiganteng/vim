@@ -2,6 +2,7 @@
 
 syntax on
 set cpoptions+=$
+set mouse=a
 set tabstop=2 shiftwidth=4
 set nu
 set nocompatible              " be iMproved, required
@@ -17,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'editorconfig/editorconfig-vim'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
