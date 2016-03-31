@@ -56,3 +56,9 @@ set smarttab
 set expandtab                       " use spaces, not tabs
 set autoindent                      " set automatic code indentation
 set hidden                          " allow background buffers w/out writing
+
+" NerdTree
+" ============================================================================
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
