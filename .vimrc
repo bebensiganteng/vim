@@ -1,24 +1,28 @@
 " http://vimawesome.com/
 
-syntax on
-set cpoptions+=$
-set mouse=a
-set tabstop=2 shiftwidth=4
-set nu
-set nocompatible              " be iMproved, required
-filetype off                  " required
 
+" ============================================================================
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'valloric/youcompleteme'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ervandew/supertab'
+Plugin 'pangloss/vim-javascript'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
+Plugin 'isRuslan/vim-es6'
+Plugin 'scrooloose/syntastic'
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -37,4 +41,18 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" ============================================================================
+" syntax highlight on
+syntax on
 
+syntax enable                       " enable syntax highlighting
+set encoding=utf8                   " utf8 default encoding
+
+set shiftwidth=4                    " set tab width
+set softtabstop=4
+set tabstop=4
+
+set smarttab
+set expandtab                       " use spaces, not tabs
+set autoindent                      " set automatic code indentation
+set hidden                          " allow background buffers w/out writing
