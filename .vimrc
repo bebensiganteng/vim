@@ -45,7 +45,6 @@ filetype plugin indent on    " required
 " syntax highlight on
 syntax on
 
-syntax enable                       " enable syntax highlighting
 set encoding=utf8                   " utf8 default encoding
 
 set shiftwidth=4                    " set tab width
@@ -56,9 +55,23 @@ set smarttab
 set expandtab                       " use spaces, not tabs
 set autoindent                      " set automatic code indentation
 set hidden                          " allow background buffers w/out writing
+set number
+
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags 
+
 
 " NerdTree
 " ============================================================================
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" THEME
+" ============================================================================
+syntax enable
+set background=dark
+"colorscheme solarized
+
+" solarized options
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 
