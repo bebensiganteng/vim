@@ -14,14 +14,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
-Plugin 'pangloss/vim-javascript'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
-Plugin 'isRuslan/vim-es6'
 Plugin 'scrooloose/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'amirh/HTML-AutoCloseTag'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -66,8 +63,16 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags 
+" syntastic
+" ============================================================================
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " NerdTree
 " ============================================================================
@@ -78,7 +83,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ============================================================================
 syntax enable
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 " solarized options
 let g:solarized_termcolors=256
