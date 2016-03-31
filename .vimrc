@@ -57,6 +57,15 @@ set autoindent                      " set automatic code indentation
 set hidden                          " allow background buffers w/out writing
 set number
 
+" split navigation
+" ============================================================================
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags 
 
 
