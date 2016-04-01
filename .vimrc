@@ -18,7 +18,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'pangloss/vim-javascript'
+" Plugin 'amirh/HTML-AutoCloseTag'
+" Plugin 'Valloric/YouCompleteMe'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -89,3 +91,14 @@ colorscheme solarized
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 
+" JAVASCRIPT
+" ============================================================================
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
