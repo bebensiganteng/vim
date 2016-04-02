@@ -1,5 +1,5 @@
 " http://vimawesome.com/
-
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/#important-vimrc-lines
 
 " ============================================================================
 " set the runtime path to include Vundle and initialize
@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
@@ -45,7 +46,7 @@ filetype plugin indent on    " required
 syntax on
 
 set encoding=utf8                   " utf8 default encoding
-
+set encoding=utf-8
 set shiftwidth=4                    " set tab width
 set softtabstop=4
 set tabstop=4
@@ -56,7 +57,23 @@ set autoindent                      " set automatic code indentation
 set hidden                          " allow background buffers w/out writing
 set number
 
-" split navigation
+set scrolloff=3
+set showmode
+set showcmd
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+"set relativenumber
+set undofile
+set mouse=a
+let mapleader = ","
+
+"split navigation
 " ============================================================================
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
