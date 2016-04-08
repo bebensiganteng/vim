@@ -20,6 +20,8 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'kchmck/vim-coffee-script'
 " Plugin 'amirh/HTML-AutoCloseTag'
 " Plugin 'Valloric/YouCompleteMe'
 
@@ -102,7 +104,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ============================================================================
 syntax enable
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 " solarized options
 let g:solarized_termcolors=256
