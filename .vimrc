@@ -22,6 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-pug'
 " Plugin 'amirh/HTML-AutoCloseTag'
 " Plugin 'Valloric/YouCompleteMe'
 
