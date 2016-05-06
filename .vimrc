@@ -23,8 +23,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'bling/vim-airline'
 " Plugin 'amirh/HTML-AutoCloseTag'
-" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -105,7 +106,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ============================================================================
 syntax enable
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 " solarized options
 let g:solarized_termcolors=256
@@ -122,3 +123,8 @@ let g:javascript_conceal_NaN        = "ℕ"
 let g:javascript_conceal_prototype  = "¶"
 let g:javascript_conceal_static     = "•"
 let g:javascript_conceal_super      = "Ω"
+
+
+" VIM AIRLINE
+" ============================================================================
+let g:airline#extensions#tabline#enabled = 1
